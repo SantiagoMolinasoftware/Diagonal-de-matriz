@@ -40,4 +40,17 @@ int main() {
         printf("Dimensiones de matriz no validas. Deben ser valores positivos.\n");
         return 1;  // Salir con código de error
     }
+    
+    int matriz[100][100];
+
+    // Inicializar la matriz con ceros
+    inicializarMatriz(matriz, filas, columnas);
+
+    // Asignar unos en la diagonal de la matriz
+    asignarUnosDiagonal(matriz, filas, columnas);
+
+    // Imprimir la matriz resultante
+    imprimirMatriz(matriz, filas, columnas);
+
+    return 0; 
 }
