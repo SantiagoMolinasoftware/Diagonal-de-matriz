@@ -27,3 +27,17 @@ void imprimirMatriz(int matriz[][100], int filas, int columnas) {
         printf("\n");
     }
 }
+
+int main() {
+    int filas, columnas;
+
+    // Solicitar al usuario el tamaño de la matriz
+    printf("Ingrese el numero de filas y columnas espaciado (x y):\n ");
+    scanf("%d %d", &filas, &columnas);
+
+    // Verificar que las dimensiones de la matriz sean válidas
+    if (filas <= 0 || columnas <= 0 || filas > 100 || columnas > 100) {
+        printf("Dimensiones de matriz no validas. Deben ser valores positivos.\n");
+        return 1;  // Salir con código de error
+    }
+}
